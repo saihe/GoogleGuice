@@ -1,2 +1,0 @@
-# GoogleGuice
-GoogleGuiceで遊ぶ
