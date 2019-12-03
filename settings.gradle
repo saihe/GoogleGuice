@@ -1,4 +1,5 @@
 rootProject.name = 'GoogleGuice'
 include 'common'
 include 'B001'
+include 'B002'
 

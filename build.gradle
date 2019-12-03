@@ -5,7 +5,7 @@ plugins {
 
 group 'ksaito'
 version '1.0-SNAPSHOT'
-mainClassName='Application'
+mainClassName='ksaito.guice.batch.Application'
 
 sourceCompatibility = 1.8
 
@@ -59,4 +59,11 @@ allprojects {
         // 適宜入れるやつ
         compile group: 'com.google.inject', name: 'guice', version: '4.1.0'
     }
+}
+
+jar {
+    manifest {
+        attributes('Main-Class': mainClassName)
+    }
+    from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
 }
