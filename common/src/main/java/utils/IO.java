@@ -1,6 +1,6 @@
-package ksaito.guice.batch.utils;
+package utils;
 
-public class Utils {
+public class IO {
     public static void print(Object obj) {
         System.out.println(obj);
     }

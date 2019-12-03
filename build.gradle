@@ -1,9 +1,11 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
 group 'ksaito'
 version '1.0-SNAPSHOT'
+mainClassName='Application'
 
 sourceCompatibility = 1.8
 
@@ -11,7 +13,12 @@ repositories {
     mavenCentral()
 }
 
-subprojects {
+dependencies {
+    compile group: 'args4j', name: 'args4j', version: '2.32'
+    compile subprojects
+}
+
+allprojects {
     apply plugin: "java"
     apply plugin: "eclipse-wtp"
     apply plugin: "idea"

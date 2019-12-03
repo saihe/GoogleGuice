@@ -1,3 +1,4 @@
 rootProject.name = 'GoogleGuice'
-include 'Batch'
+include 'common'
+include 'B001'
 

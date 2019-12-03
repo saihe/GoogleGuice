@@ -1,11 +1,9 @@
 plugins {
     id 'java'
-    id 'application'
 }
 
 group 'ksaito'
 version '1.0-SNAPSHOT'
-mainClassName='ksaito.guice.batch.Application'
 
 sourceCompatibility = 1.8
 
@@ -14,5 +12,4 @@ repositories {
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
 }
